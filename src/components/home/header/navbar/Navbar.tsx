@@ -1,6 +1,8 @@
 import React from 'react';
+import useWindowWidth from '../../../../hooks/useWindowWidth';
 
 import BurgerMenu from './burgerMenu/BurgerMenu';
+import KebabMenu from './kebabMenu/KebabMenu';
 
 const $navbarStyle = `
   w-full 
@@ -17,9 +19,15 @@ const $navbarStyle = `
 `;
 
 function Navbar() {
+  const { windowWidth } = useWindowWidth();
+
   return (
     <nav className={$navbarStyle}>
-      <BurgerMenu />
+      {
+        windowWidth < window.innerHeight
+          ? <BurgerMenu />
+          : <KebabMenu />
+      }
     </nav>
   );
 }
