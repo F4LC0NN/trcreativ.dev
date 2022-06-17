@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 import MenuHandler from '../../../../../interfaces/MenuHandler';
 
-const $menuContainer = `
+const $menuContainerStyle = `
   w-screen 
   h-screen 
   flex 
@@ -17,13 +17,13 @@ const $menuContainer = `
   bg-customBlack
 `;
 
-const $menuList = `
+const $menuListStyle = `
   flex
   flex-col
   items-center
 `;
 
-const $menuItem = `
+const $menuItemStyle = `
   w-screen
   p-4
   flex
@@ -36,26 +36,26 @@ function NavigationMenu(props: MenuHandler) {
 
   return (
     <motion.div
-      className={$menuContainer}
+      className={$menuContainerStyle}
       initial={false}
       animate={isOpen ? { x: 0 } : { x: '-100vw' }}
       transition={{ ease: 'easeOut', duration: 0.3 }}
     >
-      <ul className={$menuList}>
+      <ul className={$menuListStyle}>
         <a href="#home" onClick={toggleOpen}>
-          <li className={$menuItem}>Home</li>
+          <li className={$menuItemStyle}>Home</li>
         </a>
         <a href="#about" onClick={toggleOpen}>
-          <li className={$menuItem}>About</li>
+          <li className={$menuItemStyle}>About</li>
         </a>
         <a href="#projects" onClick={toggleOpen}>
-          <li className={$menuItem}>Projects</li>
+          <li className={$menuItemStyle}>Projects</li>
         </a>
         <a href="#blog" onClick={toggleOpen}>
-          <li className={$menuItem}>Blog</li>
+          <li className={$menuItemStyle}>Blog</li>
         </a>
         <a href="#contact" onClick={toggleOpen}>
-          <li className={$menuItem}>Contact</li>
+          <li className={$menuItemStyle}>Contact</li>
         </a>
       </ul>
     </motion.div>
