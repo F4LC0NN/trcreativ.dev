@@ -8,6 +8,14 @@ module.exports = {
       fontFamily: {
         sans: ['"Fira Code"'],
       },
+      colors: {
+        customWhite: '#EFEFEF',
+        customGrey: '#D9D9D9',
+        customBlue: '#1784E8',
+        customGreen: '#17E890',
+        customOrange: '#E86217',
+        customBlack: '#222222',
+      },
     },
   },
   plugins: [],
