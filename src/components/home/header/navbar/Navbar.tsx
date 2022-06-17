@@ -1,4 +1,4 @@
-import React, { useCallback } from 'react';
+import React from 'react';
 import { motion, useCycle } from 'framer-motion';
 
 import logoBlue from '../../../../assets/images/header/logoBlueIcon.svg';
