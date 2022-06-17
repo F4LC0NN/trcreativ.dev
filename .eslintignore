@@ -1,0 +1,8 @@
+# Ignore styles & graphic files
+*.css
+*.svg
+
+# Ignore system directories
+/node_modules
+/vscode
+.gitignore
