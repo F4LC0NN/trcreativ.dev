@@ -1,6 +1,5 @@
 import React from 'react';
-
-import Navbar from './header/navbar/Navbar';
+import Header from './header/Header';
 
 const $homeStyle = `
   w-screen
@@ -10,7 +9,7 @@ const $homeStyle = `
 function Home() {
   return (
     <div className={$homeStyle}>
-      <Navbar />
+      <Header />
     </div>
   );
 }
