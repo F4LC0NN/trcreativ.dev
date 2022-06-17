@@ -24,7 +24,7 @@ function Navbar() {
   return (
     <nav className={$navbarStyle}>
       {
-        windowWidth < window.innerHeight
+        windowWidth <= 768
           ? <BurgerMenu />
           : <KebabMenu />
       }

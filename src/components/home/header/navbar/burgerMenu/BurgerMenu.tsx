@@ -23,11 +23,13 @@ function BurgerMenu() {
   return (
     <motion.div animate={isOpen ? 'open' : 'closed'}>
       <div className={$logoBlockStyle}>
-        <img
-          src={logoBlue}
-          alt="TRCreativ.dev logo"
-          className={$logoImageStyle}
-        />
+        <a href="/">
+          <img
+            src={logoBlue}
+            alt="TRCreativ.dev logo"
+            className={$logoImageStyle}
+          />
+        </a>
       </div>
       <NavigationMenu isOpen={isOpen} toggleOpen={() => toggleOpen()} />
       <BurgerButton toggleOpen={() => toggleOpen()} />
