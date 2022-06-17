@@ -16,6 +16,12 @@ module.exports = {
         customOrange: '#E86217',
         customBlack: '#222222',
       },
+      screens: {
+        base: '0px',
+        '2xs': '360px',
+        xs: '480px',
+        '3xl': '1600px',
+      },
     },
   },
   plugins: [],

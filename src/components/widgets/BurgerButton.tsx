@@ -1,9 +1,7 @@
 import React from 'react';
 import { motion, SVGMotionProps } from 'framer-motion';
 
-interface ButtonHandler {
-  toggleOpen: () => void
-}
+import MenuHandler from '../../interfaces/MenuHandler';
 
 function Path(
   props: JSX.IntrinsicAttributes
@@ -27,11 +25,13 @@ const $buttonStyle = `
   justify-center 
   items-center 
   absolute 
-  top-3 
-  left-4
+  base:top-3 
+  base:left-4
+  xl: top-6
+  xl: left-8
 `;
 
-function BurgerButton(props: ButtonHandler) {
+function BurgerButton(props: MenuHandler) {
   const { toggleOpen } = props;
 
   return (
