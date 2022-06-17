@@ -1,6 +1,8 @@
-import React from 'react';
+import React, { useCallback } from 'react';
+import { motion, useCycle } from 'framer-motion';
 
 import logoBlue from '../../../../assets/images/header/logoBlueIcon.svg';
+import BurgerButton from '../../../widgets/BurgerButton';
 
 const $navbarStyle = `
   w-full 
@@ -8,6 +10,7 @@ const $navbarStyle = `
   flex
   justify-center
   items-center
+  relative
   border-b-2 
   border-customBlack 
   bg-customWhite 
@@ -25,8 +28,10 @@ const $logoImageStyle = `
 `;
 
 function Navbar() {
+  const [isOpen, toggleOpen] = useCycle(false, true);
+
   return (
-    <nav className={$navbarStyle}>
+    <motion.nav className={$navbarStyle} animate={isOpen ? 'open' : 'closed'}>
       <div className={$logoBlockStyle}>
         <img
           src={logoBlue}
@@ -34,7 +39,8 @@ function Navbar() {
           className={$logoImageStyle}
         />
       </div>
-    </nav>
+      <BurgerButton toggleOpen={() => toggleOpen()} />
+    </motion.nav>
   );
 }
 
