@@ -1,5 +1,9 @@
 import React from 'react';
+
+import DesktopHero from './desktopHero/DesktopHero';
 import MobileHero from './mobileHero/MobileHero';
+
+import useWindowWidth from '../../../../hooks/useWindowWidth';
 
 const $heroContainerStyle = `
   w-full
@@ -7,9 +11,12 @@ const $heroContainerStyle = `
 `;
 
 function Hero() {
+  const { windowWidth } = useWindowWidth();
+
   return (
     <div className={$heroContainerStyle}>
-      <MobileHero />
+      <MobileHero windowWidth={windowWidth} />
+      <DesktopHero />
     </div>
   );
 }

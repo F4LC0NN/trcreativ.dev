@@ -1,9 +1,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
-import useWindowWidth from '../../../../../hooks/useWindowWidth';
-
 import myName from '../../../../../assets/images/header/myName.svg';
+import HeroHandler from '../../../../../interfaces/HeroHandler';
 
 const $mobileHeroSmallStyle = `
   w-full
@@ -59,14 +58,14 @@ const $mobileHeroSubtitleStyle = `
   font-bold
 `;
 
-function MobileHero() {
-  const { windowWidth } = useWindowWidth();
+function MobileHero(props: HeroHandler) {
+  const { windowWidth } = props;
 
   function changeHeroStyle() {
     switch (true) {
-      case windowWidth <= 339:
+      case windowWidth as number <= 339:
         return $mobileHeroSmallStyle;
-      case windowWidth <= 449:
+      case windowWidth as number <= 449:
         return $mobileHeroMediumStyle;
       default:
         return $mobileHeroLargeStyle;
