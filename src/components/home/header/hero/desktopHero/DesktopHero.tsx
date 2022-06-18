@@ -34,6 +34,7 @@ const $desktopHeroBlockStyle = `
 const $desktopHeroTitleStyle = `
   text-2xl
   md:text-4xl
+  2xl:text-6xl
   font-bold
 `;
 
@@ -43,12 +44,12 @@ const $desktopHeroNameStyle = `
 
 const $desktopHeroImageStyle = `
   w-1/3
-  md:w-[40%]
   h-fit
 `;
 
 const $desktopHeroSubtitleStyle = `
   md:text-xl
+  2xl:text-2xl
   font-bold
 `;
 
