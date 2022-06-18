@@ -12,7 +12,7 @@ const $logoBlockStyle = `
   w-7
   h-7
   absolute
-  left-32
+  left-20
 `;
 
 const $logoImageStyle = `
@@ -26,9 +26,8 @@ const $menuListStyle = `
 `;
 
 const $menuItemStyle = `
-  w-24
-  base:h-14
-  xl:h-20
+  w-32
+  h-[10vh]
   flex
   justify-center
   items-center

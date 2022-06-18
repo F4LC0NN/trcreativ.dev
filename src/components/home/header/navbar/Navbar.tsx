@@ -6,7 +6,7 @@ import KebabMenu from './kebabMenu/KebabMenu';
 
 const $navbarStyle = `
   w-full 
-  base:h-[10vh]
+  h-[10vh]
   flex
   justify-center
   items-center
