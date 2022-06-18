@@ -16,9 +16,11 @@ module.exports = {
         customGreen: '#17E890',
         customOrange: '#E86217',
         customBlack: '#222222',
+        transparentBeige: '#FFE2B750',
       },
       backgroundImage: {
-        heroImage: 'url("../src/assets/images/header/plusBlue.svg")',
+        heroImageMobile: 'url("../src/assets/images/header/plusBlue.svg")',
+        heroImageDesktop: 'url("../src/assets/images/header/heroImage.svg")',
       },
     },
   },

@@ -18,7 +18,7 @@ const $mobileHeroMediumStyle = `
   p-6
   flex
   items-center
-  bg-heroImage
+  bg-heroImageMobile
   bg-no-repeat
   bg-right-top
 `;
@@ -65,7 +65,7 @@ function MobileHero(props: HeroHandler) {
     switch (true) {
       case windowWidth as number <= 339:
         return $mobileHeroSmallStyle;
-      case windowWidth as number <= 449:
+      case windowWidth as number <= 499:
         return $mobileHeroMediumStyle;
       default:
         return $mobileHeroLargeStyle;
