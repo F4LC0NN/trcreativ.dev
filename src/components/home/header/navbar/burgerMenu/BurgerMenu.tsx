@@ -7,21 +7,47 @@ import BurgerButton from '../../../../widgets/BurgerButton';
 
 import logoBlue from '../../../../../assets/images/header/logoBlueIcon.svg';
 
+const $burgerMenuContainerStyle = `
+  flex
+`;
+
+const $buttonContainerStyle = `
+  w-[20vw]
+  h-full
+  flex
+  justify-center
+  items-center
+  absolute
+  top-0
+  left-0
+  z-50
+`;
+
 const $logoBlockStyle = `
-  w-7
-  h-7
+  w-auto
+  h-fit
+  flex
+  justify-center
+  grow
 `;
 
 const $logoImageStyle = `
-  w-fit
-  h-fit
+  w-8
+  h-8
 `;
 
 function BurgerMenu() {
   const [isOpen, toggleOpen] = useCycle(false, true);
 
   return (
-    <motion.div animate={isOpen ? 'open' : 'closed'}>
+    <motion.div
+      animate={isOpen ? 'open' : 'closed'}
+      className={$burgerMenuContainerStyle}
+    >
+      <NavigationMenu isOpen={isOpen} toggleOpen={() => toggleOpen()} />
+      <div className={$buttonContainerStyle}>
+        <BurgerButton toggleOpen={() => toggleOpen()} />
+      </div>
       <div className={$logoBlockStyle}>
         <a href="/">
           <img
@@ -31,8 +57,6 @@ function BurgerMenu() {
           />
         </a>
       </div>
-      <NavigationMenu isOpen={isOpen} toggleOpen={() => toggleOpen()} />
-      <BurgerButton toggleOpen={() => toggleOpen()} />
     </motion.div>
   );
 }

@@ -15,6 +15,7 @@ const $menuContainerStyle = `
   left-0 
   text-customWhite 
   bg-customBlack
+  z-50
 `;
 
 const $menuListStyle = `

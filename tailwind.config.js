@@ -2,6 +2,7 @@
 module.exports = {
   content: [
     './src/**/*.{js,jsx,ts,tsx}',
+    './src/**/*.{svg, png, jpg, jpeg}',
   ],
   theme: {
     extend: {
@@ -15,6 +16,9 @@ module.exports = {
         customGreen: '#17E890',
         customOrange: '#E86217',
         customBlack: '#222222',
+      },
+      backgroundImage: {
+        heroImage: 'url("../src/assets/images/header/plusBlue.svg")',
       },
     },
   },

@@ -23,10 +23,7 @@ const $buttonStyle = `
   h-8 
   flex 
   justify-center 
-  items-center 
-  absolute 
-  top-4 
-  left-4
+  items-center
 `;
 
 function BurgerButton(props: MenuHandler) {
