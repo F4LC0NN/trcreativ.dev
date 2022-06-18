@@ -3,7 +3,7 @@ import { motion, useCycle } from 'framer-motion';
 
 import NavigationMenu from './NavigationMenu';
 
-import BurgerButton from '../../../../widgets/BurgerButton';
+import BurgerButton from './BurgerButton';
 
 import logoBlue from '../../../../../assets/images/header/logoBlueIcon.svg';
 

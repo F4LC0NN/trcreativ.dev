@@ -7,7 +7,6 @@ import HeroHandler from '../../../../../interfaces/HeroHandler';
 const $mobileHeroSmallStyle = `
   w-full
   h-full
-  p-6
   flex
   items-center
 `;
@@ -15,7 +14,6 @@ const $mobileHeroSmallStyle = `
 const $mobileHeroMediumStyle = `
   w-full
   h-full
-  p-6
   flex
   items-center
   bg-heroImageMobile
@@ -26,7 +24,6 @@ const $mobileHeroMediumStyle = `
 const $mobileHeroLargeStyle = `
   w-full
   h-full
-  p-12
   flex
   items-center
   bg-heroImage

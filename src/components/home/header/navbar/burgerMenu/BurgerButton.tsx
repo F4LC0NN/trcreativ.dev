@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion, SVGMotionProps } from 'framer-motion';
 
-import MenuHandler from '../../interfaces/MenuHandler';
+import MenuHandler from '../../../../../interfaces/MenuHandler';
 
 function Path(
   props: JSX.IntrinsicAttributes

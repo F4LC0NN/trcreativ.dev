@@ -5,7 +5,7 @@ import Hero from './hero/Hero';
 
 const $headerStyle = `
   w-screen
-  min-h-screen
+  min-h-fit
 `;
 
 function Header() {

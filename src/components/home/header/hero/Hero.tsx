@@ -8,12 +8,16 @@ import useWindowWidth from '../../../../hooks/useWindowWidth';
 const $heroMobileContainerStyle = `
   w-full
   h-[40vh]
+  p-6
 `;
 
 const $heroDesktopContainerStyle = `
   w-full
-  h-[70vh]
+  h-[40vh]
+  md:h-[60vh]
+  lg:h-[80vh]
   xl:h-[100vh]
+  p-6
 `;
 
 function Hero() {

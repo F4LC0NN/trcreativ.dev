@@ -1,8 +1,17 @@
 import React from 'react';
 
+import About from './about/About';
+
+const $mainStyle = `
+  w-full
+  h-fit
+`;
+
 function Main() {
   return (
-    <div>Main</div>
+    <main className={$mainStyle}>
+      <About />
+    </main>
   );
 }
 

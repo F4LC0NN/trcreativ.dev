@@ -5,7 +5,7 @@ import Main from './main/Main';
 
 const $homeStyle = `
   w-screen
-  h-screen
+  h-fit
 `;
 
 function Home() {
