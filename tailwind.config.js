@@ -17,6 +17,9 @@ module.exports = {
         customOrange: '#E86217',
         customBlack: '#222222',
       },
+      screens: {
+        xs: '480px',
+      },
       backgroundImage: {
         heroImageMobile: 'url("../src/assets/images/header/plusBlue.svg")',
         heroImageDesktop: 'url("../src/assets/images/header/heroImage.svg")',

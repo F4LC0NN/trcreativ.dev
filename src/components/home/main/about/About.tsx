@@ -5,16 +5,16 @@ import Portrait from './Portrait';
 import Description from './description/Description';
 
 import aboutMe from '../../../../assets/images/main/about/aboutMe.svg';
-import useWindowWidth from '../../../../hooks/useWindowWidth';
 
 const $aboutStyle = `
   w-full
   h-fit
   px-6
+  xs:px-16
   sm:px-32
   md:px-48
   lg:px-72
-  xl:px-6
+  lg:px-6
 `;
 
 const $aboutTitleStyle = `
@@ -35,19 +35,10 @@ const $aboutTitleImageStyle = `
 `;
 
 const $aboutTextContainer = `
-  xl:flex
-`;
-
-const $aboutPortraitContainer = `
-  xl:w-full
-  xl:h-auto
-  xl:flex
-  xl:items-center
+  lg:flex
 `;
 
 function About() {
-  const { windowWidth } = useWindowWidth();
-
   return (
     <motion.article
       initial={{ x: 30, opacity: 0 }}
@@ -65,17 +56,7 @@ function About() {
         />
       </div>
       <div className={$aboutTextContainer}>
-        {
-          windowWidth <= 1024
-            ? <Portrait />
-            : (
-              <div className={$aboutPortraitContainer}>
-                <Portrait />
-              </div>
-            )
-
-        }
-
+        <Portrait />
         <Description />
       </div>
     </motion.article>

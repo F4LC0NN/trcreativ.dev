@@ -1,18 +1,18 @@
 import React from 'react';
 
-import FirstSection from './FirstSection';
-import SecondSection from './SecondSection';
+import DescriptionText from './DescriptionText';
 
 const $descriptionArticle = `
   w-full
   h-fit
+  md:px-32
+  lg:px-0
 `;
 
 function Description() {
   return (
     <article className={$descriptionArticle}>
-      <FirstSection />
-      <SecondSection />
+      <DescriptionText />
     </article>
   );
 }

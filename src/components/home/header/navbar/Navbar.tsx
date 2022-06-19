@@ -21,7 +21,7 @@ function Navbar() {
   const { windowWidth } = useWindowWidth();
 
   return (
-    <nav className={$navbarStyle}>
+    <nav className={$navbarStyle} id="home">
       {
         windowWidth <= 768
           ? <BurgerMenu />

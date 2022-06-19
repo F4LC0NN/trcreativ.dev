@@ -1,6 +1,6 @@
 import React from 'react';
 
-const $firstSection = `
+const $DescriptionTextStyle = `
   w-fit
   h-fit
 `;
@@ -10,7 +10,8 @@ const $sectionTitleStyle = `
   text-lg
   font-bold
   text-center
-  xl:text-left
+  md:text-center
+  lg:text-left
 `;
 
 const $sectionList = `
@@ -42,9 +43,9 @@ font-bold
 text-customOrange
 `;
 
-function FirstSection() {
+function DescriptionText() {
   return (
-    <section className={$firstSection}>
+    <section className={$DescriptionTextStyle}>
       <ul className={$sectionList}>
         <li className={$sectionItem}>
           <h3 className={$sectionTitleStyle}>Who Am I?</h3>
@@ -78,16 +79,29 @@ function FirstSection() {
         </li>
         <li className={$sectionItem}>
           <p>
-            What I like the most is
+            I work with
             {' '}
-            <span className={$sectionSpanBlue}>mobile app development</span>
+            <span className={$sectionSpanBlue}>React</span>
+            {' '}
+            &
+            {' '}
+            <span className={$sectionSpanBlue}>Typescript</span>
+            {' '}
+            to build my projects,
           </p>
           <p>
-            because I can express my
+            as well as
             {' '}
-            <span className={$sectionSpanOrange}>creativity</span>
+            <span className={$sectionSpanOrange}>Sass</span>
+            ,
             {' '}
-            better.
+            <span className={$sectionSpanOrange}>Tailwind CSS</span>
+            {' '}
+            &
+            {' '}
+            <span className={$sectionSpanOrange}>Framer Motion</span>
+            {' '}
+            for the design.
           </p>
         </li>
         <li className={$sectionItem}>
@@ -124,4 +138,4 @@ function FirstSection() {
   );
 }
 
-export default FirstSection;
+export default DescriptionText;

@@ -10,12 +10,12 @@ import camera from '../../../../assets/images/main/about/camera.svg';
 
 const $portraitContainerStyle = `
   w-full
-  h-full
+  h-1/1
   mb-10
   flex
   justify-center
   items-center
-  xl:scale-150
+  lg:scale-150
 `;
 
 const $portraitBgStyle = `
