@@ -19,6 +19,8 @@ const $menuListStyle = `
   absolute
   bottom-24
   right-6
+  lg:bottom-32
+  lg:right-14
   gap-4
 `;
 
@@ -43,6 +45,7 @@ function FabMenu() {
     <ul className={$menuListStyle}>
       <motion.a
         href="#home"
+        initial={false}
         variants={{
           open: { y: 0 },
           closed: { y: 255 },
@@ -58,9 +61,10 @@ function FabMenu() {
       </motion.a>
       <motion.a
         href="#about"
+        initial={false}
         variants={{
           open: { y: 0 },
-          closed: { y: 205 },
+          closed: { y: 210 },
         }}
         transition={{
           ease: 'easeOut',
@@ -73,9 +77,10 @@ function FabMenu() {
       </motion.a>
       <motion.a
         href="#projects"
+        initial={false}
         variants={{
           open: { y: 0 },
-          closed: { y: 155 },
+          closed: { y: 160 },
         }}
         transition={{
           ease: 'easeOut',
@@ -88,9 +93,10 @@ function FabMenu() {
       </motion.a>
       <motion.a
         href="#blog"
+        initial={false}
         variants={{
           open: { y: 0 },
-          closed: { y: 105 },
+          closed: { y: 110 },
         }}
         transition={{
           ease: 'easeOut',
@@ -103,9 +109,10 @@ function FabMenu() {
       </motion.a>
       <motion.a
         href="#contact"
+        initial={false}
         variants={{
           open: { y: 0 },
-          closed: { y: 55 },
+          closed: { y: 60 },
         }}
         transition={{
           ease: 'easeOut',
