@@ -1,8 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
-import MenuHandler from '../../interfaces/MenuHandler';
-
 import homeIcon from '../../assets/images/fab/homeIcon.svg';
 import aboutIcon from '../../assets/images/fab/aboutIcon.svg';
 import projectIcon from '../../assets/images/fab/projectIcon.svg';
