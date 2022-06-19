@@ -58,7 +58,7 @@ function FloatingActionButton() {
   const { windowScroll } = useWindowScroll();
 
   function toggleFab() {
-    if (windowScroll <= 325) {
+    if (windowScroll <= 100) {
       return { opacity: 0, display: 'none' };
     }
     return { opacity: 1, display: 'block' };
