@@ -1,4 +1,5 @@
 import React from 'react';
+
 import useWindowWidth from '../../../../hooks/useWindowWidth';
 
 import BurgerMenu from './burgerMenu/BurgerMenu';
@@ -15,13 +16,14 @@ const $navbarStyle = `
   border-customBlack 
   bg-customWhite 
   shadow-md
+  z-50
 `;
 
 function Navbar() {
   const { windowWidth } = useWindowWidth();
 
   return (
-    <nav className={$navbarStyle} id="home">
+    <nav className={$navbarStyle}>
       {
         windowWidth <= 768
           ? <BurgerMenu />

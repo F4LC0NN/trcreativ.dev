@@ -9,12 +9,16 @@ import aboutMe from '../../../../assets/images/main/about/aboutMe.svg';
 const $aboutStyle = `
   w-full
   h-fit
+  lg:h-[100vh]
   px-6
   xs:px-16
   sm:px-32
   md:px-48
   lg:px-72
   lg:px-6
+  lg:flex
+  lg:flex-col
+  lg:relative
 `;
 
 const $aboutTitleStyle = `
@@ -24,9 +28,13 @@ const $aboutTitleStyle = `
 const $aboutTitleImageContainerStyle = `
   w-full
   h-[10vh]
+  lg:h-[20vh]
   flex
   justify-center
   items-center
+  lg:bg-aboutBgImage
+  lg:bg-no-repeat
+  lg:bg-right
 `;
 
 const $aboutTitleImageStyle = `
@@ -41,17 +49,17 @@ const $aboutTextContainer = `
 function About() {
   return (
     <motion.article
-      initial={{ x: 30, opacity: 0 }}
-      whileInView={{ x: 0, opacity: 1 }}
+      initial={{ y: 10, opacity: 0 }}
+      whileInView={{ y: 0, opacity: 1 }}
       transition={{ ease: 'easeOut', duration: 0.7 }}
       className={$aboutStyle}
+      id="about"
     >
       <h2 className={$aboutTitleStyle}>About Me</h2>
       <div className={$aboutTitleImageContainerStyle}>
         <img
           src={aboutMe}
           alt="About Me"
-          id="about"
           className={$aboutTitleImageStyle}
         />
       </div>

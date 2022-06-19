@@ -1,9 +1,15 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 
 import DesktopHero from './desktopHero/DesktopHero';
 import MobileHero from './mobileHero/MobileHero';
 
 import useWindowWidth from '../../../../hooks/useWindowWidth';
+
+const $heroStyle = `
+  w-full
+  h-fit
+`;
 
 const $heroMobileContainerStyle = `
   w-full
@@ -24,7 +30,12 @@ function Hero() {
   const { windowWidth } = useWindowWidth();
 
   return (
-    <div>
+    <motion.div
+      initial={{ y: 10, opacity: 0 }}
+      whileInView={{ y: 0, opacity: 1 }}
+      transition={{ ease: 'easeOut', duration: 0.7 }}
+      className={$heroStyle}
+    >
       {
         windowWidth <= 499
           ? (
@@ -38,7 +49,7 @@ function Hero() {
             </div>
           )
       }
-    </div>
+    </motion.div>
   );
 }
 

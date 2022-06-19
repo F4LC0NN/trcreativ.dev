@@ -16,6 +16,7 @@ module.exports = {
         customGreen: '#10A365',
         customOrange: '#E86217',
         customBlack: '#222222',
+        customTransparentBlack: '#22222225',
       },
       screens: {
         xs: '480px',

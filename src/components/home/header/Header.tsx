@@ -10,7 +10,7 @@ const $headerStyle = `
 
 function Header() {
   return (
-    <header className={$headerStyle}>
+    <header className={$headerStyle} id="home">
       <Navbar />
       <Hero />
     </header>

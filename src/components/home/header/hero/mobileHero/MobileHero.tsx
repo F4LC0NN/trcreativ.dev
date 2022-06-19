@@ -70,10 +70,7 @@ function MobileHero(props: HeroHandler) {
   }
 
   return (
-    <motion.section
-      initial={{ x: '-20vw', opacity: 0 }}
-      whileInView={{ x: 0, opacity: 1 }}
-      transition={{ ease: 'easeOut', duration: 0.7 }}
+    <section
       className={changeHeroStyle()}
     >
       <div className={$mobileHeroBlockStyle}>
@@ -93,7 +90,7 @@ function MobileHero(props: HeroHandler) {
           front-end developer!
         </h2>
       </div>
-    </motion.section>
+    </section>
   );
 }
 
