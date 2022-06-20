@@ -15,7 +15,6 @@ const $about = `
   sm:px-32
   md:px-48
   lg:px-72
-  lg:px-6
   lg:flex
   lg:flex-col
   lg:relative

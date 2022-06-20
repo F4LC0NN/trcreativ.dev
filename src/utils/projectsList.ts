@@ -59,9 +59,14 @@ const projectsList = [
     imageAlt: 'Screenshot of Cast.io',
     $imageContainer: `
       w-fit
+      sm:w-[60%]
+      md:w-fit
+      lg:w-[40%]
       h-fit
-      relative
+      sm:m-auto
+      lg:m-0
       p-6
+      relative
       border-2
       border-customBlack
       bg-customBlue
@@ -69,7 +74,8 @@ const projectsList = [
     $projectButton: `
       w-full
       h-fit
-      p-2
+      px-4
+      py-2
       rounded-sm
       font-bold
       text-customWhite
@@ -78,7 +84,7 @@ const projectsList = [
     $codeButton: `
       w-full
       h-fit
-      px-2
+      px-4
       font-bold
       text-customBlue
     `,
@@ -123,9 +129,14 @@ const projectsList = [
     imageAlt: 'Screenshot of TRCreativ.dev',
     $imageContainer: `
       w-fit
+      sm:w-[60%]
+      md:w-fit
+      lg:w-[40%]
       h-fit
-      relative
+      sm:m-auto
+      lg:m-0
       p-6
+      relative
       border-2
       border-customBlack
       bg-customOrange
@@ -183,9 +194,14 @@ const projectsList = [
     imageAlt: 'Screenshot of my CV turned into a website',
     $imageContainer: `
       w-fit
+      sm:w-[60%]
+      md:w-fit
+      lg:w-[40%]
       h-fit
-      relative
+      sm:m-auto
+      lg:m-0
       p-6
+      relative
       border-2
       border-customBlack
       bg-customGreen
@@ -193,7 +209,8 @@ const projectsList = [
     $projectButton: `
       w-full
       h-fit
-      p-2
+      px-4
+      py-2
       rounded-sm
       font-bold
       text-customWhite
@@ -202,7 +219,7 @@ const projectsList = [
     $codeButton: `
       w-full
       h-fit
-      px-2
+      px-4
       font-bold
       text-customGreen
     `,
@@ -235,9 +252,14 @@ const projectsList = [
     imageAlt: 'Screenshot of Studify',
     $imageContainer: `
       w-fit
+      sm:w-[60%]
+      md:w-fit
+      lg:w-[40%]
       h-fit
-      relative
+      sm:m-auto
+      lg:m-0
       p-6
+      relative
       border-2
       border-customBlack
       bg-customBlack
@@ -245,7 +267,8 @@ const projectsList = [
     $projectButton: `
       w-full
       h-fit
-      p-2
+      px-4
+      py-2
       rounded-sm
       font-bold
       text-customWhite
@@ -254,7 +277,7 @@ const projectsList = [
     $codeButton: `
       w-full
       h-fit
-      px-2
+      px-4
       font-bold
       text-customBlack
     `,
@@ -287,9 +310,14 @@ const projectsList = [
     imageAlt: 'Screenshot of Simple Calc',
     $imageContainer: `
       w-fit
+      sm:w-[60%]
+      md:w-fit
+      lg:w-[40%]
       h-fit
-      relative
+      sm:m-auto
+      lg:m-0
       p-6
+      relative
       border-2
       border-customBlack
       bg-customBlue
@@ -297,7 +325,8 @@ const projectsList = [
     $projectButton: `
       w-full
       h-fit
-      p-2
+      px-4
+      py-2
       rounded-sm
       font-bold
       text-customWhite
@@ -306,7 +335,7 @@ const projectsList = [
     $codeButton: `
       w-full
       h-fit
-      px-2
+      px-4
       font-bold
       text-customBlue
     `,
@@ -339,9 +368,14 @@ const projectsList = [
     imageAlt: 'Screenshot of Etch A Sketch',
     $imageContainer: `
       w-fit
+      sm:w-[60%]
+      md:w-fit
+      lg:w-[40%]
       h-fit
-      relative
+      sm:m-auto
+      lg:m-0
       p-6
+      relative
       border-2
       border-customBlack
       bg-customOrange
@@ -349,7 +383,8 @@ const projectsList = [
     $projectButton: `
       w-full
       h-fit
-      p-2
+      px-4
+      py-2
       rounded-sm
       font-bold
       text-customWhite
@@ -358,7 +393,7 @@ const projectsList = [
     $codeButton: `
       w-full
       h-fit
-      px-2
+      px-4
       font-bold
       text-customOrange
     `,
@@ -378,9 +413,14 @@ const projectsList = [
     imageAlt: 'Screenshot of trcreativ.com',
     $imageContainer: `
       w-fit
+      sm:w-[60%]
+      md:w-fit
+      lg:w-[40%]
       h-fit
-      relative
+      sm:m-auto
+      lg:m-0
       p-6
+      relative
       border-2
       border-customBlack
       bg-customGreen
@@ -388,7 +428,8 @@ const projectsList = [
     $projectButton: `
       w-full
       h-fit
-      p-2
+      px-4
+      py-2
       rounded-sm
       font-bold
       text-customWhite
