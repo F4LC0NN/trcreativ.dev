@@ -1,12 +1,12 @@
-import { motion } from 'framer-motion';
 import React from 'react';
+import { motion } from 'framer-motion';
 
 import Portrait from './Portrait';
 import Description from './description/Description';
 
 import aboutMe from '../../../../assets/images/main/about/aboutMe.svg';
 
-const $aboutStyle = `
+const $about = `
   w-full
   h-fit
   lg:h-[100vh]
@@ -21,11 +21,11 @@ const $aboutStyle = `
   lg:relative
 `;
 
-const $aboutTitleStyle = `
+const $aboutTitle = `
   hidden
 `;
 
-const $aboutTitleImageContainerStyle = `
+const $aboutTitleImageContainer = `
   w-full
   h-[10vh]
   lg:h-[20vh]
@@ -37,7 +37,7 @@ const $aboutTitleImageContainerStyle = `
   lg:bg-right
 `;
 
-const $aboutTitleImageStyle = `
+const $aboutTitleImage = `
   w-32
   h-fit
 `;
@@ -48,26 +48,26 @@ const $aboutTextContainer = `
 
 function About() {
   return (
-    <motion.article
+    <motion.section
       initial={{ y: 10, opacity: 0 }}
       whileInView={{ y: 0, opacity: 1 }}
       transition={{ ease: 'easeOut', duration: 0.7 }}
-      className={$aboutStyle}
+      className={$about}
       id="about"
     >
-      <h2 className={$aboutTitleStyle}>About Me</h2>
-      <div className={$aboutTitleImageContainerStyle}>
+      <h2 className={$aboutTitle}>About Me</h2>
+      <div className={$aboutTitleImageContainer}>
         <img
           src={aboutMe}
           alt="About Me"
-          className={$aboutTitleImageStyle}
+          className={$aboutTitleImage}
         />
       </div>
       <div className={$aboutTextContainer}>
         <Portrait />
         <Description />
       </div>
-    </motion.article>
+    </motion.section>
   );
 }
 

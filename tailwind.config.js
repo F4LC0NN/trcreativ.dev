@@ -25,6 +25,8 @@ module.exports = {
         heroImageMobile: 'url("../src/assets/images/header/plusBlue.svg")',
         heroImageDesktop: 'url("../src/assets/images/header/heroImage.svg")',
         aboutBgImage: 'url("../src/assets/images/main/bg/plusGreen.svg")',
+        projectsBgImage: `url(
+          "../src/assets/images/main/bg/triangleOrange.svg")`,
       },
     },
   },

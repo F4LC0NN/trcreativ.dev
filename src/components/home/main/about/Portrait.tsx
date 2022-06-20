@@ -8,7 +8,7 @@ import portraitPhoto from
   '../../../../assets/images/main/about/portraitPhoto.png';
 import camera from '../../../../assets/images/main/about/camera.svg';
 
-const $portraitContainerStyle = `
+const $portraitContainer = `
   w-full
   h-1/1
   mb-10
@@ -18,7 +18,7 @@ const $portraitContainerStyle = `
   lg:scale-150
 `;
 
-const $portraitBgStyle = `
+const $portraitBg = `
   w-40
   h-40
   relative
@@ -27,7 +27,7 @@ const $portraitBgStyle = `
   bg-customWhite
 `;
 
-const $portraitBackFrameStyle = `
+const $portraitBackFrame = `
   w-full
   h-full
   border-2
@@ -38,13 +38,13 @@ const $portraitBackFrameStyle = `
   -z-10
 `;
 
-const $dotGridImageStyle = `
+const $dotGridImage = `
   w-full
   h-full
   object-cover
 `;
 
-const $portraitDrawnStyle = `
+const $portraitDrawn = `
   w-full
   h-full
   object-cover
@@ -53,7 +53,7 @@ const $portraitDrawnStyle = `
   left-0
 `;
 
-const $portraitButtonStyle = `
+const $portraitButton = `
   w-14
   h-14
   p-3
@@ -69,36 +69,45 @@ const $portraitButtonStyle = `
   bg-customWhite
 `;
 
+const $cameraImage = `
+  w-fit
+  h-fit
+`;
+
 function Portrait() {
   const [isDrawn, toggleDrawn] = useCycle(true, false);
 
   return (
-    <aside className={$portraitContainerStyle}>
-      <div className={$portraitBgStyle}>
-        <div className={$portraitBackFrameStyle} />
+    <aside className={$portraitContainer}>
+      <div className={$portraitBg}>
+        <div className={$portraitBackFrame} />
         <img
           src={dotGrid}
           alt="A grid of dots"
-          className={$dotGridImageStyle}
+          className={$dotGridImage}
         />
         <motion.img
           src={portraitDrawn}
           alt="My drawn portrait"
           animate={isDrawn ? { opacity: 1 } : { opacity: 0 }}
-          className={$portraitDrawnStyle}
+          className={$portraitDrawn}
         />
         <motion.img
           src={portraitPhoto}
           alt="My portrait in real"
           animate={isDrawn ? { opacity: 0 } : { opacity: 1 }}
-          className={$portraitDrawnStyle}
+          className={$portraitDrawn}
         />
         <button
           type="button"
           onClick={() => toggleDrawn()}
-          className={$portraitButtonStyle}
+          className={$portraitButton}
         >
-          <img src={camera} alt="Click here to switch between portraits" />
+          <img
+            src={camera}
+            alt="Click here to switch between portraits"
+            className={$cameraImage}
+          />
         </button>
       </div>
     </aside>
