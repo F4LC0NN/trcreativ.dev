@@ -98,10 +98,6 @@ const $buttonGraphic = `
   -z-10
 `;
 
-const $techListHidden = `
-  hidden
-`;
-
 function ProjectsCarousel() {
   return (
     <div className={$carouselContainer}>

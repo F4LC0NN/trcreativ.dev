@@ -50,6 +50,10 @@ const projectsList = [
         imageSrc: html,
         imageAlt: 'HTML5',
       },
+      {
+        imageSrc: figma,
+        imageAlt: 'Figma',
+      },
     ],
     imageSrc: castDotIo,
     imageAlt: 'Screenshot of Cast.io',
@@ -110,6 +114,10 @@ const projectsList = [
         imageSrc: firebase,
         imageAlt: 'Firebase',
       },
+      {
+        imageSrc: figma,
+        imageAlt: 'Figma',
+      },
     ],
     imageSrc: trCreativDotDev,
     imageAlt: 'Screenshot of TRCreativ.dev',
@@ -165,6 +173,10 @@ const projectsList = [
       {
         imageSrc: javascript,
         imageAlt: 'Javascript',
+      },
+      {
+        imageSrc: figma,
+        imageAlt: 'Figma',
       },
     ],
     imageSrc: websiteCv,
