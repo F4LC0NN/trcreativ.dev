@@ -1,6 +1,7 @@
 import React from 'react';
 
-import myProjects from '../../../../assets/images/main/projects/myProjects.svg';
+import myProjects from '../../../../assets/images/main/projects/title/myProjects.svg';
+import ProjectsCarousel from './projectsCarousel/ProjectsCarousel';
 
 const $projects = `
   w-full
@@ -39,6 +40,7 @@ function Projects() {
           className={$projectsTitleImage}
         />
       </div>
+      <ProjectsCarousel />
     </section>
   );
 }

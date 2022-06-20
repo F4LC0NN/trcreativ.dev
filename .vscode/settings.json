@@ -6,4 +6,6 @@
   "source.fixAll.eslint": true
   },
   "css.customData": [".vscode/css_custom_data.json"],
+  "editor.wordWrap": "wordWrapColumn",
+  "editor.wordWrapColumn": 160
 }
