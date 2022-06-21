@@ -1,11 +1,12 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 
 import myProjects from '../../../../assets/images/main/projects/title/myProjects.svg';
 import ProjectsCarousel from './projectsCarousel/ProjectsCarousel';
 
 const $projects = `
   w-full
-  h-[100vh]
+  h-fit
 `;
 
 const $projectsTitle = `
@@ -31,7 +32,13 @@ const $projectsTitleImage = `
 
 function Projects() {
   return (
-    <section id="projects" className={$projects}>
+    <motion.section
+      id="projects"
+      className={$projects}
+      initial={{ y: 10, opacity: 0 }}
+      whileInView={{ y: 0, opacity: 1 }}
+      transition={{ ease: 'easeOut', duration: 0.7 }}
+    >
       <h2 className={$projectsTitle}>My projects</h2>
       <div className={$projectsTitleImageContainer}>
         <img
@@ -41,7 +48,7 @@ function Projects() {
         />
       </div>
       <ProjectsCarousel />
-    </section>
+    </motion.section>
   );
 }
 

@@ -48,11 +48,11 @@ const $aboutTextContainer = `
 function About() {
   return (
     <motion.section
+      id="about"
+      className={$about}
       initial={{ y: 10, opacity: 0 }}
       whileInView={{ y: 0, opacity: 1 }}
       transition={{ ease: 'easeOut', duration: 0.7 }}
-      className={$about}
-      id="about"
     >
       <h2 className={$aboutTitle}>About Me</h2>
       <div className={$aboutTitleImageContainer}>

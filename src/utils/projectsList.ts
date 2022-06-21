@@ -158,7 +158,7 @@ const projectsList = [
       text-customOrange
     `,
     buttonLink: '/',
-    codeLink: '/',
+    codeLink: 'https://bit.ly/3n1BiQX',
   },
   {
     key: (Math.random() * Date.now()),
