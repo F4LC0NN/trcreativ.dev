@@ -92,10 +92,6 @@ const $hiddenInputs = `
 `;
 
 function ContactForm() {
-  // function submitForm(e: { preventDefault: () => void; }) {
-  //   e.preventDefault();
-  // }
-
   return (
     <div className={$contactFormContainer}>
       <h1 className={$contactFormTitle}>Let&apos;s start working together!</h1>
