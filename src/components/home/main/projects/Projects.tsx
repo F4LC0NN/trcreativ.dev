@@ -1,8 +1,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
+import Showcases from './showcases/Showcases';
 import myProjects from '../../../../assets/images/main/projects/title/myProjects.svg';
-import ProjectsCarousel from './projectsCarousel/ProjectsCarousel';
 
 const $projects = `
   w-full
@@ -47,7 +47,7 @@ function Projects() {
           className={$projectsTitleImage}
         />
       </div>
-      <ProjectsCarousel />
+      <Showcases />
     </motion.section>
   );
 }

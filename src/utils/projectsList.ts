@@ -60,7 +60,7 @@ const projectsList = [
     $imageContainer: `
       w-fit
       sm:w-[60%]
-      md:w-fit
+      md:w-[70%]
       lg:w-[40%]
       h-fit
       sm:m-auto
@@ -79,14 +79,17 @@ const projectsList = [
       rounded-sm
       font-bold
       text-customWhite
+      text-start
       bg-customBlue
     `,
     $codeButton: `
       w-full
       h-fit
       px-4
+      py-2
       font-bold
       text-customBlue
+      text-start
     `,
     buttonLink: 'https://bit.ly/3O66QRf',
     codeLink: 'https://bit.ly/3y5Y3JO',
@@ -130,7 +133,7 @@ const projectsList = [
     $imageContainer: `
       w-fit
       sm:w-[60%]
-      md:w-fit
+      md:w-[70%]
       lg:w-[40%]
       h-fit
       sm:m-auto
@@ -144,18 +147,22 @@ const projectsList = [
     $projectButton: `
       w-full
       h-fit
-      p-2
+      px-4
+      py-2
       rounded-sm
       font-bold
       text-customWhite
+      text-start
       bg-customOrange
     `,
     $codeButton: `
       w-full
       h-fit
-      px-2
+      px-4
+      py-2
       font-bold
       text-customOrange
+      text-start
     `,
     buttonLink: '/',
     codeLink: 'https://bit.ly/3n1BiQX',
@@ -195,7 +202,7 @@ const projectsList = [
     $imageContainer: `
       w-fit
       sm:w-[60%]
-      md:w-fit
+      md:w-[70%]
       lg:w-[40%]
       h-fit
       sm:m-auto
@@ -214,14 +221,17 @@ const projectsList = [
       rounded-sm
       font-bold
       text-customWhite
+      text-start
       bg-customGreen
     `,
     $codeButton: `
       w-full
       h-fit
       px-4
+      py-2
       font-bold
       text-customGreen
+      text-start
     `,
     buttonLink: 'https://bit.ly/3zOf8sK',
     codeLink: 'https://bit.ly/3HByfrS',
@@ -253,7 +263,7 @@ const projectsList = [
     $imageContainer: `
       w-fit
       sm:w-[60%]
-      md:w-fit
+      md:w-[70%]
       lg:w-[40%]
       h-fit
       sm:m-auto
@@ -272,14 +282,17 @@ const projectsList = [
       rounded-sm
       font-bold
       text-customWhite
+      text-start
       bg-customBlack
     `,
     $codeButton: `
       w-full
       h-fit
       px-4
+      py-2
       font-bold
       text-customBlack
+      text-start
     `,
     buttonLink: 'https://bit.ly/3y2oOyH',
     codeLink: 'https://bit.ly/3y3KDhc',
@@ -311,7 +324,7 @@ const projectsList = [
     $imageContainer: `
       w-fit
       sm:w-[60%]
-      md:w-fit
+      md:w-[70%]
       lg:w-[40%]
       h-fit
       sm:m-auto
@@ -330,14 +343,17 @@ const projectsList = [
       rounded-sm
       font-bold
       text-customWhite
+      text-start
       bg-customBlue
     `,
     $codeButton: `
       w-full
       h-fit
       px-4
+      py-2
       font-bold
       text-customBlue
+      text-start
     `,
     buttonLink: 'https://bit.ly/39BKmZw',
     codeLink: 'https://bit.ly/3bdW25k',
@@ -369,7 +385,7 @@ const projectsList = [
     $imageContainer: `
       w-fit
       sm:w-[60%]
-      md:w-fit
+      md:w-[70%]
       lg:w-[40%]
       h-fit
       sm:m-auto
@@ -388,14 +404,17 @@ const projectsList = [
       rounded-sm
       font-bold
       text-customWhite
+      text-start
       bg-customOrange
     `,
     $codeButton: `
       w-full
       h-fit
       px-4
+      py-2
       font-bold
       text-customOrange
+      text-start
     `,
     buttonLink: 'https://bit.ly/3y4ga2v',
     codeLink: 'https://bit.ly/3ObWUGe',
@@ -414,7 +433,7 @@ const projectsList = [
     $imageContainer: `
       w-fit
       sm:w-[60%]
-      md:w-fit
+      md:w-[70%]
       lg:w-[40%]
       h-fit
       sm:m-auto
@@ -433,6 +452,7 @@ const projectsList = [
       rounded-sm
       font-bold
       text-customWhite
+      text-start
       bg-customGreen
     `,
     $codeButton: `

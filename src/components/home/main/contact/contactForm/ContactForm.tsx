@@ -3,6 +3,7 @@ import React from 'react';
 import blueStar from '../../../../../assets/images/main/contact/blueStar.svg';
 
 const $contactFormContainer = `
+  h-[100vh]
   px-6
   md:px-48
   lg:px-16
@@ -80,8 +81,8 @@ const $buttonDecoration = `
   w-full
   h-12
   absolute
-  top-6
-  left-2
+  top-5
+  left-1
   border-2
   border-customBlack
   bg-transparent
