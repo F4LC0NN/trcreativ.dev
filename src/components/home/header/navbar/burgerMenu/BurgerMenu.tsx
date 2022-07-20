@@ -6,7 +6,6 @@ import NavigationMenu from './NavigationMenu';
 import BurgerButton from './BurgerButton';
 
 import logoBlue from '../../../../../assets/images/header/logoBlueIcon.svg';
-import FloatingActionButton from '../../../../widgets/FloatingActionButton';
 
 const $burgerMenuContainerStyle = `
   flex

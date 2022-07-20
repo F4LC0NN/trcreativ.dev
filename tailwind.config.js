@@ -28,6 +28,7 @@ module.exports = {
         aboutBgImage: 'url("../src/assets/images/main/bg/plusGreen.svg")',
         projectsBgImage: `url(
           "../src/assets/images/main/bg/triangleOrange.svg")`,
+        contactBgImage: 'url("../src/assets/images/main/bg/squareBlack.svg")',
       },
     },
   },
