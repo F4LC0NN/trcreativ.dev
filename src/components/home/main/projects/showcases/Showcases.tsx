@@ -26,6 +26,10 @@ const $showcasesItem = `
 
 const $imageContainer = `
   relative
+  mb-8
+  sm:mb-8
+  md:mb-8
+  lg:mb-8
 `;
 
 const $cardImageDecoration = `
@@ -35,24 +39,21 @@ const $cardImageDecoration = `
   -z-10
 `;
 
+const $cardTextContainer = `
+  grid
+  gap-4
+  mb-4
+`;
+
 const $cardTitle = `
-  lg:mt-2
-  py-4
-  lg:p-4
   font-bold
 `;
 
 const $cardDescription = `
-  lg:w-[60%]
-  lg:h-[5vh]
-  block
-  lg:px-4
-  lg:mb-4
+  lg:h-16
 `;
 
 const $cardTechnoList = `
-  py-4
-  lg:p-4
   flex
   items-center
   gap-2
@@ -60,6 +61,7 @@ const $cardTechnoList = `
 
 const $cardTechnoImage = `
   w-4
+  lg:w-5
 `;
 
 const $cardButtonContainer = `
@@ -103,17 +105,19 @@ function Showcases() {
                 />
                 <img src={item.imageSrc} alt={item.imageAlt} />
               </div>
-              <h1 className={$cardTitle}>{item.title}</h1>
-              <p className={$cardDescription}>{item.description}</p>
-              <ul className={$cardTechnoList}>
-                {
-                  item.technologies.map((techno) => (
-                    <li key={Math.random()}>
-                      <img src={techno.imageSrc} alt={techno.imageAlt} className={$cardTechnoImage} />
-                    </li>
-                  ))
-                }
-              </ul>
+              <div className={$cardTextContainer}>
+                <h1 className={$cardTitle}>{item.title}</h1>
+                <p className={$cardDescription}>{item.description}</p>
+                <ul className={$cardTechnoList}>
+                  {
+                    item.technologies.map((techno) => (
+                      <li key={Math.random()}>
+                        <img src={techno.imageSrc} alt={techno.imageAlt} className={$cardTechnoImage} />
+                      </li>
+                    ))
+                  }
+                </ul>
+              </div>
               <div className={$cardButtonContainer}>
                 <div className={$projectButtonContainer}>
                   <a href={item.buttonLink} target="_blank" rel="noreferrer" className={$projectButtonLink}>
