@@ -58,9 +58,6 @@ function KebabMenu() {
         <a href="#projects">
           <li className={$menuItemStyle}>Projects</li>
         </a>
-        <a href="#blog">
-          <li className={$menuItemStyle}>Blog</li>
-        </a>
         <a href="#contact">
           <li className={$menuItemStyle}>Contact</li>
         </a>

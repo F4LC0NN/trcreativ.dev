@@ -52,9 +52,6 @@ function NavigationMenu(props: MenuHandler) {
         <a href="#projects" onClick={toggleOpen}>
           <li className={$menuItemStyle}>Projects</li>
         </a>
-        <a href="#blog" onClick={toggleOpen}>
-          <li className={$menuItemStyle}>Blog</li>
-        </a>
         <a href="#contact" onClick={toggleOpen}>
           <li className={$menuItemStyle}>Contact</li>
         </a>

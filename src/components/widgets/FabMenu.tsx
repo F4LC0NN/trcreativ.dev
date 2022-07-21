@@ -4,7 +4,6 @@ import { motion } from 'framer-motion';
 import homeIcon from '../../assets/images/fab/homeIcon.svg';
 import aboutIcon from '../../assets/images/fab/aboutIcon.svg';
 import projectIcon from '../../assets/images/fab/projectIcon.svg';
-import blogIcon from '../../assets/images/fab/blogIcon.svg';
 import contactIcon from '../../assets/images/fab/contactIcon.svg';
 
 const $menuListStyle = `
@@ -46,7 +45,7 @@ function FabMenu() {
         initial={false}
         variants={{
           open: { y: 0 },
-          closed: { y: 255 },
+          closed: { y: 200 },
         }}
         transition={{
           ease: 'easeOut',
@@ -62,7 +61,7 @@ function FabMenu() {
         initial={false}
         variants={{
           open: { y: 0 },
-          closed: { y: 210 },
+          closed: { y: 160 },
         }}
         transition={{
           ease: 'easeOut',
@@ -78,22 +77,6 @@ function FabMenu() {
         initial={false}
         variants={{
           open: { y: 0 },
-          closed: { y: 160 },
-        }}
-        transition={{
-          ease: 'easeOut',
-          duration: 0.3,
-        }}
-      >
-        <li className={$menuItemStyle}>
-          <img src={projectIcon} alt="Project" />
-        </li>
-      </motion.a>
-      <motion.a
-        href="#blog"
-        initial={false}
-        variants={{
-          open: { y: 0 },
           closed: { y: 110 },
         }}
         transition={{
@@ -102,7 +85,7 @@ function FabMenu() {
         }}
       >
         <li className={$menuItemStyle}>
-          <img src={blogIcon} alt="Blog" />
+          <img src={projectIcon} alt="Project" />
         </li>
       </motion.a>
       <motion.a
