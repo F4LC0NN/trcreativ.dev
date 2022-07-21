@@ -11,12 +11,14 @@ const $contactFormContainer = `
 `;
 
 const $contactFormTitle = `
+  px-2
   text-lg
   font-bold
 `;
 
 const $contactFormSubtitle = `
   block
+  px-2
 `;
 
 const $blueStar = `
@@ -41,6 +43,8 @@ const $credential = `
 `;
 
 const $formLabel = `
+  block
+  p-2
   font-bold
 `;
 
