@@ -79,6 +79,7 @@ const $formSubmitButton = `
   text-customWhite
   border-none
   bg-customBlack
+  cursor-pointer
 `;
 
 const $buttonDecoration = `
@@ -90,6 +91,7 @@ const $buttonDecoration = `
   border-2
   border-customBlack
   bg-transparent
+  pointer-events-none
 `;
 
 const $hiddenInputs = `
