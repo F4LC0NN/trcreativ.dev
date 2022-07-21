@@ -3,7 +3,7 @@ import React from 'react';
 import blueStar from '../../../../../assets/images/main/contact/blueStar.svg';
 
 const $contactFormContainer = `
-  h-[100vh]
+  h-fit
   px-6
   md:px-48
   lg:px-16
@@ -28,7 +28,7 @@ const $blueStar = `
 `;
 
 const $form = `
-  my-6
+  block
 `;
 
 const $personalInfo = `
@@ -100,7 +100,7 @@ const $hiddenInputs = `
 
 function ContactForm() {
   return (
-    <div className={$contactFormContainer}>
+    <div className={$contactFormContainer} id="contactForm">
       <h1 className={$contactFormTitle}>Let&apos;s start working together!</h1>
       <h2 className={$contactFormSubtitle}>
         The required fields are indicated with a

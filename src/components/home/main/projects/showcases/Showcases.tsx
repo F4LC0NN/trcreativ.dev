@@ -97,7 +97,15 @@ function Showcases() {
         {
           projectsList.map((item) => (
             <li key={item.id} className={$showcasesItem}>
-              <div className={`${item.$imageContainer}, ${$imageContainer}`}>
+              <div
+                className={
+                  `
+                    ${item.$imageContainer} 
+                    ${$imageContainer}
+                  `
+                }
+                id={item.id}
+              >
                 <img
                   src={dotsImage}
                   alt="Dots decorations"

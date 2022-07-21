@@ -1,4 +1,5 @@
 import React from 'react';
+import Footer from './footer/Footer';
 
 import Header from './header/Header';
 import Main from './main/Main';
@@ -13,6 +14,7 @@ function Home() {
     <div className={$homeStyle}>
       <Header />
       <Main />
+      <Footer />
     </div>
   );
 }

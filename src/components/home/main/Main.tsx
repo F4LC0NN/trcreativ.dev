@@ -5,8 +5,8 @@ import Contact from './contact/Contact';
 import Projects from './projects/Projects';
 
 const $mainStyle = `
-  w-full
-  h-fit
+  w-screen
+  min-h-fit
 `;
 
 function Main() {
