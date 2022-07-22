@@ -76,7 +76,7 @@ const iconList = [
   {
     icon: trDev,
     alt: 'TRCreativ.dev, my dev portfolio',
-    src: '/',
+    src: '#home',
   },
   {
     icon: github,
